@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(241, 178, 60);
+}
+
+.container{
+    margin-top: 50px;
+}
+
+*{
+padding:auto;
+margin:auto;
+text-align:center;
+}
+
+#img {
+    height:100px;
+    width: 100px;
+}
