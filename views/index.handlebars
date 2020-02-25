@@ -2,31 +2,23 @@
   <div class = "container">
       <img id = "img" src= "/assets/img/burger.png">
       <h2>Eat-Da-Burger!</h2>
+      <div class ="row">
+        <div class = "col-md-6"> 
+          
+            {{#each burgers}}
+                <p>
+                <button id = "burger" disabled>  {{this.id}}. {{this.burger_name}}          </button>
+                <button data-movieid="{{this.id}}" class="devburger"> Devour it!  </button> 
+                </p>
 
-      {{!-- <div> 
-        <ul>
-          {{#each burgers}
-            {{#unless devoured}}
-              {{!-- {{devoured=false}} --}}
-                {{!-- <li>
-                  <p>
-                    {{this.id}}. {{this.burger_name}}
-                    <button data-movieid="{{this.id}}" class="devburger">Devour it!</button>
-                  </p>
-                </li>
-            {{/unless}}
-          {{/each}}
-        </ul> --}}
+            {{/each}}
+          
+        </div> 
+        <div class = "col-md-6">
+          
+        </div> 
 
-        {{!-- <ul>
-          {{#each burgers}}
-            {{#if devoured}}
-            {{this.id}}. {{this.burger_name}}
-            {{/if}}
-          {{/each}}
-        </ul> --}}
-        
-      {{!-- </div> --}} 
+      </div>
       <form id= "addburger" class="create-form">
         <div class="form-group">
           <textarea type="text" name="burger_name"></textarea>
@@ -34,4 +26,4 @@
         <button  type="submit" class="btn btn-primary">Submit</button>
       </form>   
       <p>Eat a burger you want to eat Click the "Submit" button.</p>
-    </div>
+  </div>>
