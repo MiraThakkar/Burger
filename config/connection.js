@@ -2,10 +2,10 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-    host: process.env.host,
+    host: "localhost",
     user: "root",
-    password: process.env.password,
-    database: process.env.database
+    password: "",
+    database: "burgers_db"
 });
 
 // Make connection.

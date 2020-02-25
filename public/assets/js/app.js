@@ -12,9 +12,34 @@ $("#addburger").on("submit", function(event) {
       data: newBurger
     }).then(
       function() {
-        console.log("added new movie");
+        console.log("added new burger");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
+
+//   $(function() {
+//     $(".devburger").on("click", function(event) {
+//       var id = $(this).data("id");
+//       var newSleep = $(this).data("newsleep");
+  
+//       var newState= {
+//         devoured: 
+//       };
+  
+//       // Send the PUT request.
+//       $.ajax("/api/cats/" + id, {
+//         type: "PUT",
+//         data: newSleepState
+//       }).then(
+//         function() {
+//           console.log("changed sleep to", newSleep);
+//           // Reload the page to get the updated list
+//           location.reload();
+//         }
+//       );
+//     });
+//   });
+  
+   
