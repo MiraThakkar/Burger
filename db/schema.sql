@@ -1,4 +1,4 @@
-### Schema
+	### Schema
 
 CREATE DATABASE burgers_db;
 
@@ -11,8 +11,8 @@ CREATE TABLE burgers_d
     devoured BOOLEAN DEFAULT false,
 
     PRIMARY KEY (ID)
-)
+);
 
+UPDATE burgers SET devoured = true WHERE burger_name = "Vada Pav";
 
-
-
+select * from burgers;

@@ -6,15 +6,25 @@
         <div class = "col-md-6"> 
           
             {{#each burgers}}
+              {{#unless devoured}}
                 <p>
                 <button id = "burger" disabled>  {{this.id}}. {{this.burger_name}}          </button>
                 <button data-movieid="{{this.id}}" class="devburger"> Devour it!  </button> 
                 </p>
-
+              {{/unless}}
+              
             {{/each}}
           
         </div> 
         <div class = "col-md-6">
+          {{#each burgers}}
+              {{#if devoured}}
+                <p>
+                <button id = "burger" disabled>  {{this.id}}. {{this.burger_name}}          </button>
+                </p>
+              {{/if}}
+              
+            {{/each}}
           
         </div> 
 
