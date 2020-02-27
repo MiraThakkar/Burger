@@ -60,7 +60,6 @@ var orm = {
         if (err) {
           throw err;
         }
-  
         cb(result);
       });
     },
@@ -72,7 +71,7 @@ var orm = {
       queryString += objToSql(objColVals);
       queryString += " WHERE ";
       queryString += condition;
-  
+      console.log("from orm");
       console.log(queryString);
       connection.query(queryString, function(err, result) {
         if (err) {
