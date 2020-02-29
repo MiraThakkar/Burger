@@ -12,11 +12,6 @@ h2{
     color:red;
 }
 
-/* *{
-padding:auto;
-margin:auto;
-text-align:center;
-} */ 
 
 #img {
     height:100px;
@@ -28,4 +23,9 @@ text-align:center;
     width: 40%;
     height: 40px;
     
+}
+
+#devouredBurger {
+    width: 50%;
+    text-align: left;
 }

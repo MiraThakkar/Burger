@@ -1,7 +1,7 @@
 $(function (){
 
   $(".create-form").on("submit", function(event) {
-    // Make sure to preventDefault on a submit event.
+    // preventDefault on a submit event.
     event.preventDefault();
     
     var newBurger= {
@@ -14,7 +14,6 @@ $(function (){
       data: newBurger
     }).then(function() {
         // Reload the page to get the updated list
-        //console.log("reload in Post");
         location.reload();
       });
   });
@@ -40,33 +39,24 @@ $(function (){
         location.reload();
     });
 
-});
+    $(".delete-burger").on("click", function(event) {
+      event.stopPropagation();
 
-
-
-
-
-
-//     $(".devburger").on("click", function(event) {
-//       var id = $(this).data("id");
-//       var newSleep = $(this).data("newsleep");
+      var id = $(this).parent().parent().data("id");
+      
+      // Send the DELETE request.
+      $.ajax("/api/burgers/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+          console.log("deleted burger", id);
+          // Reload the page to get the updated list
+          location.reload();
+        }
+      );
+    });
+  });
   
-//       var newState= {
-//         devoured: 
-//       };
   
-//       // Send the PUT request.
-//       $.ajax("/api/cats/" + id, {
-//         type: "PUT",
-//         data: newSleepState
-//       }).then(
-//         function() {
-//           console.log("changed sleep to", newSleep);
-//           // Reload the page to get the updated list
-//           location.reload();
-//         }
-//       );
-//     });
-//  
   
    

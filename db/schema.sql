@@ -16,3 +16,5 @@ CREATE TABLE burgers_d
 UPDATE burgers SET devoured = true WHERE burger_name = "Vada Pav";
 
 select * from burgers;
+
+DELETE FROM burgers WHERE id = 6;

@@ -19,15 +19,18 @@
         <div class = "col-md-6">
           {{#each burgers}}
               {{#if devoured}}
-                <p>
-                <button id = "burger" disabled>  {{this.id}}. {{this.burger_name}}          </button>
-                </p>
+                
+                <button data-name="button-name" data-id={{this.id}} class = "devouredBurger" type= "button" id = "burger" disabled >  {{this.id}}. {{this.burger_name}}
+                  <span data-name="span name" data-id="span-id">
+                    <i data-name="name" id="test" class='fas fa-trash-alt float-right text-danger delete-burger'></i>
+                  </span>
+                </button>
+                
               {{/if}}
               
             {{/each}}
           
-        </div> 
-
+        </div>
       </div>
       <form id= "addburger" class="create-form">
         <div class="form-group">
@@ -36,4 +39,4 @@
         <button  type="submit" class="btn btn-primary">Submit</button>
       </form>   
       <p>Eat a burger you want to eat Click the "Submit" button.</p>
-  </div>>
+  </div>
