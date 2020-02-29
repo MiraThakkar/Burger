@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(241, 178, 60);
+    background-color: rgb(236, 184, 86);
 }
 
 .container{
@@ -14,8 +14,9 @@ h2{
 
 
 #img {
-    height:100px;
-    width: 100px;
+    padding-top: 30px;
+    height:200px;
+    width: 200px;
 }
 
 #burger{
@@ -25,7 +26,27 @@ h2{
     
 }
 
-#devouredBurger {
+.devouredBurger {
     width: 50%;
     text-align: left;
+    padding-left: 20px;
 }
+
+.row{
+    padding-top: 30px;
+}
+
+#burgerText {
+
+    margin-top: 20px;
+    width : 30%;
+    height:40px;
+    
+}
+
+p1{
+
+    padding-top: 20px;
+
+}
+
