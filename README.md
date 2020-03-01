@@ -11,3 +11,5 @@
 * Devoured burger listed on the right side of the page also has a trash icon. on clicking on the icon, the burger will be deleted from the database
 
 ![Check out this video of the app for a run-through of how it works](Eat-Da-Burger.gif)
+
+* Link to Heroku app (https://guarded-basin-88723.herokuapp.com/)
